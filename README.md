@@ -1,6 +1,6 @@
 # C++ training
 
-It's repository with review of all basic capability of C++ language. It contains two makefiles which are able to build all binary files wih simply call `make` in the terminal.
+It's repository with review of all basic capabilities of C++ language. It contains two makefiles which are able to build all binary files wih simply call `make` in the terminal.
 
 It includes examples of:
 - Makefiles
