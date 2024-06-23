@@ -34,9 +34,9 @@ class Cat: private Animal {
 
 int main() {
 
-	Cat mruczek;
-	cout << "Mruczek robi: ";
-	mruczek.sayHello();
+	Cat Axel;
+	cout << "Axel says: ";
+	Axel.sayHello();
 	cout << endl;
 
 	return 0;

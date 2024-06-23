@@ -8,7 +8,7 @@ int main() {
 	fstream File("test.txt", ios::app);
 	string line;
 	if(File.is_open()) {
-		cout << "Wprowadź dane do pliku: " << endl;
+		cout << "Provide data to file: " << endl;
 		getline(cin, line);
 		File << line << "\n";
 		File.close();
@@ -16,11 +16,11 @@ int main() {
 
 	File.open("test.txt");
 	if(File.is_open()) {
-		cout << "Zawartość pliku: " << endl << endl;
+		cout << "File content: " << endl << endl;
 		while(getline(File, line)) {
 			cout << line << endl;
 		}
-		cout << "\nKoniec zawartości pliku" << endl;
+		cout << "\nEnd of file content" << endl;
 	}
 
 	File.close();

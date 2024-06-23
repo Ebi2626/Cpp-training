@@ -6,19 +6,19 @@ using namespace std;
 int main() {
     int a = 5;
 
-    cout << "Adres przed: " << &a << endl;
-    cout << "Wartość przed: " << a << "\n" << endl;
+    cout << "Address before: " << &a << endl;
+    cout << "Wartość before: " << a << "\n" << endl;
 
     change(&a); // & give us address to var
 
-    cout << "Adres po: " << &a << endl;
-    cout << "Wartość po: " << a << endl;
+    cout << "Address after: " << &a << endl;
+    cout << "Value after: " << a << endl;
 
     return 0;
 }
 
 void change(int *x) { 
     *x = -1; // * get us value stored under specific address 
-    cout << "Adres w funkcji: " << x << endl;
-    cout << "Nowa wartość w funkcji: " << *x << "\n" << endl;
+    cout << "Address in function: " << x << endl;
+    cout << "New value in function: " << *x << "\n" << endl;
 }

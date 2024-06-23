@@ -24,7 +24,7 @@ class Sum {
 		Sum(T arg1, T arg2) {
 			X = arg1;
 			Y = arg2;
-			cout << "Suma wynosi: " << this->getSum() << endl;
+			cout << "Sum is: " << this->getSum() << endl;
 		}
 };
 
@@ -41,7 +41,7 @@ class Sum<Point> {
 			this->X = Point(arg1.x, arg1.y);
 			this->Y = Point(arg2.x, arg2.y);
 			Point sum = this->getSum();
-			cout << "Suma punktów wynosi: " << "x: " << sum.x << ", y: " << sum.y << endl;
+			cout << "Sum of points is: " << "x: " << sum.x << ", y: " << sum.y << endl;
 		}
 };
 
@@ -50,9 +50,9 @@ int main() {
 
 	Point a(2, 2);
 	Point b(1, 4);
-	
+
 	Sum<int> sumInt(1, 2);
-	Sum<string> sumString("test", " konktenacji stringów");
+	Sum<string> sumString("test", " strings concatenation");
 	Sum<Point> sumOfPoints(a, b);
 
 	return 0;
